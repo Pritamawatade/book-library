@@ -110,8 +110,7 @@ Select from the dropdown to sort books:
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 🌐 Contact
-
-Your Name - [pritam_awatade]
+[pritam_awatade]
 
 Project Link: [https://book-library-iota-gray.vercel.app/](https://github.com/Pritamawatade/book-library)
 
