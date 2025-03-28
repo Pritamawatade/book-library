@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+#searchInput, #sortSelect, .view-toggle button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#searchInput {
+    width: 300px;
+}
+
+.view-toggle button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-toggle button:hover {
+    background-color: #45a049;
+}
+
+#booksContainer {
+    display: grid;
+    gap: 20px;
+}
+
+.grid-view {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.list-view {
+    grid-template-columns: 1fr;
+}
+
+.book-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.book-item:hover {
+    transform: scale(1.03);
+}
+
+.book-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.book-details {
+    padding: 15px;
+}
+
+.book-details h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.book-details p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #searchInput {
+        width: 100%;
+    }
+}
